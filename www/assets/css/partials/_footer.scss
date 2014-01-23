@@ -1,27 +1,31 @@
 footer{
 	color: $footerFontColor;
-	padding: 1.5em 0;
 	text-align: center;
 	width: 100%;
+	margin: 0 auto;
 
 	ul{
 		list-style: none;
-		margin: 0 1em;
 		padding: 0;
 
-		@media screen and (min-width: 768px){
+		@media #{$tabletDeskOnly}{
 			margin-bottom: 0.5em;
+			margin: 0 1em 0.5em 1em;
+		}
+
+		@media #{$noTabletDesk}{
+			margin:0;
 		}
 	}
 
 	li{
-		@media screen and (max-width: 767px){
-			border-top: 1px solid $grey-light;
+		@media #{$noTabletDesk}{
+			border-top: 1px solid $borderColor;
 			line-height: 44px;
 			text-align: center;
 		}
 
-		@media screen and (min-width: 768px){
+		@media #{$tabletDeskOnly}{
 			display: inline;
 			padding:0 5px;
 		}
@@ -32,13 +36,33 @@ footer{
 			font-size: 0.917em;
 			position: relative;
 
-			@media screen and (max-width: 767px){
+			@media #{$noTabletDesk}{
 				width: 100%;
 			}
 
 			&:hover{
 				color: $footerFontColorHover;
 			}
+		}
+	}
+
+.footerContent {
+	padding: 1.5em 0;
+	@media #{$tabletOnly} {
+		margin:0 3em;
+	}
+	@media #{$tabletDeskOnly} {
+		border-top:4px double #b3b3b3;
+	}
+}
+	
+	.socialicons ul li a i {
+		font-size:1.8em;
+	}
+
+	.contactinfo {
+		@media #{$tabletDeskOnly}{
+			display:none;
 		}
 	}
 

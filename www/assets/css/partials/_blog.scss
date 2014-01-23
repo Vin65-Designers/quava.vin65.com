@@ -1,25 +1,19 @@
 .blogContent{
-	@media screen and (min-width: 581px){
-		float: left;
+	@media #{$tabletDeskOnly}{
+		float: right;
 		width: 75%;
-	}
-
-	@media screen and (min-width: 768px){
-		padding: 4% 4% 0 0;
-		width: 56%;
 	}
 }
 
 .blogFilterWrapper {
 
-	@media screen and (min-width: 581px){
-		float: right;
-		width: 20%;
+	@media #{$tabletDeskOnly}{
+		float: left;
+		width: 25%;
 	}
 
-	@media screen and (min-width: 768px){
-		padding-top: 4%;
-		width: 40%;
+	@media #{$noTabletDesk}{
+		width: 100%;
 	}
 
 	ul{
@@ -33,16 +27,18 @@
 	}
 }
 
-	.blogFilter{
-		@media screen and (max-width: 580px), (min-width: 768px){
-			float: left;
-			width: 48%;
+	.blogFilterRight{
+		@media #{$noTabletDesk}{
+			float:left;
+			width:42%;
+			padding:4%;
 		}
 	}
 
 	.blogFilterLeft {
-		@media screen and (max-width: 580px), (min-width: 768px){
-
-			padding-right: 4%;
+		@media #{$noTabletDesk}{
+			float:left;
+			width:42%;
+			padding:4%;
 		}
 	}

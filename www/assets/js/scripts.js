@@ -16,12 +16,8 @@
 		}
 	},
 	home : {
-		initPhotoGallery : function(){
-			if($("#slider").length){
-				$("#slider").v65PhotoGallery({
-					galleryId : "964891e4-a231-7b8c-5b46-2cc64a607476"
-				});
-			}
+		init : function() {
+			$('.v65-productGroup-product img').attr('src', $(this).attr('src').replace('thumbnails', 'large'));
 		}
 	},
 	page : {
@@ -145,5 +141,4 @@
 })(jQuery);
 
 v65.global.init();
-v65.home.initPhotoGallery();
 v65.page.init();

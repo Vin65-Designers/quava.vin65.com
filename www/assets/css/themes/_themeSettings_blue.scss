@@ -1,0 +1,69 @@
+// Colors
+$grey: #575757;
+$light-grey: #ccc;
+$grey-lightest: #e5e5e5;
+$black: #111;
+$white: #fff;
+$offWhite: #e8e8e8;
+$bordergrey: #B3B3B3;
+$blue:#6699CC;
+$light-blue: lighten($blue, 20%);
+$red: #D8401E;
+
+// Font Colors
+$fontColor: $black; // Main Body Content font color
+$linkColor: darken($blue, 20%); // Main Body content link color
+
+// Backgroung Color
+$backgroundColor: $offWhite; // Main Background Color
+
+// Heading Colors
+$headingFontColor: $black; // Default Heading Font Color
+$headerFontColor: $black; // Font Color outside the container
+$headerFontColorHover: $black; // Hover font color outside the container
+
+// User Tools Colors
+$topBarColor: $light-grey; // User Tools background color
+$userToolsLinkColor: $black; // Link Color for user tools
+
+// Navigation Colors
+$navLinkColor: $black; //Font Color for main navigation
+$navLinkHover: $black; //Font Hover for main navigation
+
+$navSelected: $black;
+
+$subNavLinkColor: $grey; //Font Color for sub navigation
+$subNavLinkHover: $light-grey; //Font Color for sub navigation hover
+$subNavBackgroundColor: $grey-lightest; //Background Color for sub navigation
+
+// Footer Colors
+$footerColor: $grey; //Footer Color
+$footerLink: $light-grey; // Footer Link
+$footerLinkHover: $white; // Footer Link Hover
+
+$footerFontColor: $black; //Font Color outside the container
+$footerFontColorHover: $black; // Hover font color outside the container
+
+// Border Colors
+$borderColor: $bordergrey; // Main Border Color
+
+// Button Colors
+$mainButtonColor: $blue; // Main Button Color
+$mainButtonHover: $light-blue; // Main Button Hover
+$mainButtonText: $white; // Main Button Font Color
+
+$secondButtonColor: $light-grey; // Secondary Button Color
+$secondButtonHover: $grey-lightest; // Secondary Button Hover
+$secondButtonText: $black; // Secondary Button Font Color
+
+// Form Colors
+$quanityForm: $light-grey; // Add to cart quanity input form field background color.
+$quanityFormFont: $black; // Add to cart quanity input form field font color.
+
+// Back to Top Colors
+$backToTop: $black; // Back to top button color
+$backToTopFont: $white; // Back to top button font color
+
+// Logo Settings
+$logo: 'logo-blue.png';
+$logo-retina: 'logo-blue@2x.png';

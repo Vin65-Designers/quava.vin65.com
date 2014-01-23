@@ -5,15 +5,26 @@ header.primary{
 	z-index: 10;
 }
 
-	#user-tools {
-		@media screen and (max-width: 580px){
-			border-bottom: 1px solid $black;
-		}
-
-		a {
-			color: $headerFontColor;
-		}
+.topBarContainer {
+	width:100%;
+	margin:0 auto;
+	background:$topBarColor;
+	
+	@media #{$stabTabletDeskOnly} {
+		height:3em;
 	}
+
+	@media #{$noStabTabletDesk} {
+		height:4em;
+	}
+	
+
+}
+
+.topBar {
+	margin:0 auto;
+	max-width:970px;
+}
 
 	.logo{
 		background:{
@@ -23,21 +34,22 @@ header.primary{
 		}
 		background-size: contain;
 		display: block;
-		height: 140px;
+		height: 50px;
 		position: relative;
 		width: 260px;
+		margin:1.5em auto;
+		padding-bottom:1em;
 
 		@media screen and (-webkit-min-device-pixel-ratio: 1.5),	(min-device-pixel-ratio: 1.5){
 			background-image: image-url($logo-retina);
 		}
 		
-		@media screen and (max-width: 767px){
+		@media #{$noTabletDesk}{
 			clear: both;
-			margin: 0.5em auto 0;
+			margin: 1.5em auto 0;
 		}
 
-		@media screen and (min-width: 768px){
-			float: left;
+		@media #{$tabletDeskOnly}{
 			margin-bottom: 0;
 		}
 	}

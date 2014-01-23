@@ -1,35 +1,31 @@
-@import 'themes/themeSettings_grey';
-// @import 'themes/themeSettings_black';
-// @import 'themes/themeSettings_red';
-// @import 'themes/themeSettings_yellow';
+// @import 'themes/themeSettings_green';
+// @import 'themes/themeSettings_orange';
+@import 'themes/themeSettings_blue';
 
 // Global Fonts
+$durusans: 'Duru Sans', sans-serif;
 $georgia: Georgia, serif;
 $lucida: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
 
-// Global Colors
-$blue: #369;
-$blue-light: #3b73ac;
-$blue-dark: #2e5b87;
-$offBlack: #111;	
 
 // Global Variables
 $maxWidth: 990px;
-$linkColor: $blue;
+$fontFamily: $durusans;
+$headingFontFamily: $durusans;
 
-$fontColor: $offBlack;
-$fontFamily: $lucida;
 
-$headingFontFamily: $georgia;
-$headingColor: $grey-dark;
+// Global Break Points
+$deskOnly: "only screen and (min-width : 1025px)";
+$noDesk: "only screen and (max-width : 1024px)";
+$tabletDeskOnly: "only screen and (min-width : 768px)";
+$noTabletDesk: "only screen and (max-width : 767px)";
+$tabletOnly: "only screen and (min-width : 768px) and (max-width : 1024px)";
+$stabTabletOnly: "only screen and (min-width : 581px) and (max-width : 1024px)";
+$stabOnly: "only screen and (min-width : 581px) and (max-width : 767px)";
+$stabTabletDeskOnly: "only screen and (min-width : 581px)";
+$noStabTabletDesk: "only screen and (max-width : 580px)";
+$mobileOnly: "only screen and (max-width : 450px)";
 
-$userToolsBackgroundColor: $black; //Background Color for usertools
-$userToolsColor: $white; //Font Color for usertools
-$userToolsLinkColor: $grey-light; //Font Color for usertools
-$userToolsHoverColor: $white; //Font Color for usertools
-
-$buttonFontColor: $white; // Default Color for Button Font
-$altButtonFontColor: $white; // Alt Color for Buttons Font
 
 @mixin gradient($color1, $color2){
 	background-color: $color1;

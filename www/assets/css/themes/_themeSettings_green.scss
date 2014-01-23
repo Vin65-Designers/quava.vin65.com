@@ -1,0 +1,70 @@
+// Colors
+$grey: #575757;
+$light-grey: #ccc;
+$grey-lightest: #e5e5e5;
+$dark-grey: #333;
+$black: #111;
+$white: #fff;
+$offWhite: #e8e8e8;
+$bordergrey: #B3B3B3;
+$green:#9DBF8E;
+$light-green:#BED3B4;
+$red: #900;
+
+// Font Colors
+$fontColor: $dark-grey; // Main Body Content font color
+$linkColor: $red; // Main Body content link color
+
+// Backgroung Color
+$backgroundColor: $offWhite; // Main Background Color
+
+// Heading Colors
+$headingFontColor: $dark-grey; // Default Heading Font Color
+$headerFontColor: $dark-grey; // Font Color outside the container
+$headerFontColorHover: $black; // Hover font color outside the container
+
+// User Tools Colors
+$topBarColor: $light-grey; // User Tools background color
+$userToolsLinkColor: $black; // Link Color for user tools
+
+// Navigation Colors
+$navLinkColor: $dark-grey; //Font Color for main navigation
+$navLinkHover: $black; //Font Hover for main navigation
+
+$navSelected: $black;
+
+$subNavLinkColor: $grey; //Font Color for sub navigation
+$subNavLinkHover: $light-grey; //Font Color for sub navigation hover
+$subNavBackgroundColor: $grey-lightest; //Background Color for sub navigation
+
+// Footer Colors
+$footerColor: $grey; //Footer Color
+$footerLink: $light-grey; // Footer Link
+$footerLinkHover: $white; // Footer Link Hover
+
+$footerFontColor: $dark-grey; //Font Color outside the container
+$footerFontColorHover: $black; // Hover font color outside the container
+
+// Border Colors
+$borderColor: $bordergrey; // Main Border Color
+
+// Button Colors
+$mainButtonColor: $green; // Main Button Color
+$mainButtonHover: $light-green; // Main Button Hover
+$mainButtonText: $white; // Main Button Font Color
+
+$secondButtonColor: $light-grey; // Secondary Button Color
+$secondButtonHover: $grey-lightest; // Secondary Button Hover
+$secondButtonText: $black; // Secondary Button Font Color
+
+// Form Colors
+$quanityForm: $light-grey; // Add to cart quanity input form field background color.
+$quanityFormFont: $black; // Add to cart quanity input form field font color.
+
+// Back to Top Colors
+$backToTop: $dark-grey; // Back to top button color
+$backToTopFont: $white; // Back to top button font color
+
+// Logo Settings
+$logo: 'logo.png';
+$logo-retina: 'logo@2x.png';

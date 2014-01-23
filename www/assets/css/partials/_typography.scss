@@ -6,52 +6,54 @@ body{
 	background-color: $backgroundColor;
 	color: $fontColor;
 	font-family: $fontFamily;
-	max-width: 990px;
 	margin: 0 auto;
-
 	@media screen and (min-width: 581px) and (max-width: 1030px){
-		padding: 0 10px;
+		padding: 0;
 	}
 }
 
+.mainWrapper {
+	max-width:970px;
+	margin:auto;
+}
+
 h1, h2, h3, h4, h5, h6 {
-	color: $headingColor;
+	color: $headingFontColor;
 	font:{
 		family: $headingFontFamily;
-		style: italic;
 		weight: normal;
 	}
 	margin: 0;
 }
 
 h1 {
-	font-size: 3em;
+	font-size: 1.8em;
 	line-height: 1;
 	margin-bottom: 0.5em;
 }
 
 h2 {
-	font-size: 2.25em;
+	font-size: 1.5em;
 	line-height: 1.3333333333333333;
 	margin-bottom: 0.6666666666666666em;
 }
 
 h3 {
-	font-size: 1.5em;
+	font-size: 1.3125em;
 	line-height: 1;
 	margin-bottom: 1em;
 }
 
 h4 {
-	font-size: 1.3125em;
+	font-size: 1.125em;
 	line-height: 1.1428571428571428;
 	margin-bottom: 1.1428571428571428em;
 }
 
 h5 {
-	font-size: 1.125em;
+	font-size: 1.5em;
 	line-height: 1.3333333333333333;
-	margin-bottom: 1.3333333333333333em;
+	margin-bottom: 0.6666666666666666em;
 }
 
 h6 {
@@ -61,19 +63,19 @@ h6 {
 }
 
 .v65-title { 
-	color: $headingColor;
+	color: $headingFontColor;
 	font:{
 		family: $headingFontFamily;
-		size: 2em;
-		style: italic;
+		size: 1.5em;
 		weight: normal;
 	}
+	min-height:2em;
 	line-height: 1;
 	margin-bottom: 0.5em;
 }
 
 .v65-subtitle {
-	color: $headingColor;
+	color: $headingFontColor;
 	font:{
 		size: 1.5em;
 		family: $headingFontFamily;

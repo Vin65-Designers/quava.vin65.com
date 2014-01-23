@@ -1,4 +1,4 @@
-@charset "utf-8";
+@charset "UTF-8";
 /* CSS Document */
 /* ====================================================================================================
 	Table of Content
@@ -18,7 +18,7 @@
 	7. Buttons
 	8. Footer
 */
-/* normalize.css v2.1.3 | MIT License | git.io/normalize */
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -730,54 +730,57 @@ html {
 }
 
 body {
-  background-color: #f1f1f1;
+  background-color: #e8e8e8;
   color: #111111;
-  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
-  max-width: 990px;
+  font-family: "Duru Sans", sans-serif;
   margin: 0 auto;
 }
 @media screen and (min-width: 581px) and (max-width: 1030px) {
   body {
-    padding: 0 10px;
+    padding: 0;
   }
 }
 
+.mainWrapper {
+  max-width: 970px;
+  margin: auto;
+}
+
 h1, h2, h3, h4, h5, h6 {
-  color: #333333;
-  font-family: Georgia, serif;
-  font-style: italic;
+  color: #111111;
+  font-family: "Duru Sans", sans-serif;
   font-weight: normal;
   margin: 0;
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 1.8em;
   line-height: 1;
   margin-bottom: 0.5em;
 }
 
 h2 {
-  font-size: 2.25em;
+  font-size: 1.5em;
   line-height: 1.3333333333333333;
   margin-bottom: 0.6666666666666666em;
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 1.3125em;
   line-height: 1;
   margin-bottom: 1em;
 }
 
 h4 {
-  font-size: 1.3125em;
+  font-size: 1.125em;
   line-height: 1.1428571428571428;
   margin-bottom: 1.1428571428571428em;
 }
 
 h5 {
-  font-size: 1.125em;
+  font-size: 1.5em;
   line-height: 1.3333333333333333;
-  margin-bottom: 1.3333333333333333em;
+  margin-bottom: 0.6666666666666666em;
 }
 
 h6 {
@@ -787,19 +790,19 @@ h6 {
 }
 
 .v65-title {
-  color: #333333;
-  font-family: Georgia, serif;
-  font-size: 2em;
-  font-style: italic;
+  color: #111111;
+  font-family: "Duru Sans", sans-serif;
+  font-size: 1.5em;
   font-weight: normal;
+  min-height: 2em;
   line-height: 1;
   margin-bottom: 0.5em;
 }
 
 .v65-subtitle {
-  color: #333333;
+  color: #111111;
   font-size: 1.5em;
-  font-family: Georgia, serif;
+  font-family: "Duru Sans", sans-serif;
   font-weight: normal;
   line-height: 1;
   margin-bottom: 1em;
@@ -862,39 +865,52 @@ header.primary {
   z-index: 10;
 }
 
-@media screen and (max-width: 580px) {
-  #user-tools {
-    border-bottom: 1px solid black;
+.topBarContainer {
+  width: 100%;
+  margin: 0 auto;
+  background: #cccccc;
+}
+@media only screen and (min-width: 581px) {
+  .topBarContainer {
+    height: 3em;
   }
 }
-#user-tools a {
-  color: #333333;
+@media only screen and (max-width: 580px) {
+  .topBarContainer {
+    height: 4em;
+  }
+}
+
+.topBar {
+  margin: 0 auto;
+  max-width: 970px;
 }
 
 .logo {
-  background-image: url('../images/logo.png?1380748623');
+  background-image: url('../images/logo-blue.png?1390497390');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: contain;
   display: block;
-  height: 140px;
+  height: 50px;
   position: relative;
   width: 260px;
+  margin: 1.5em auto;
+  padding-bottom: 1em;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5) {
   .logo {
-    background-image: url('../images/logo@2x.png?1382045253');
+    background-image: url('../images/logo-blue@2x.png?1390497405');
   }
 }
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .logo {
     clear: both;
-    margin: 0.5em auto 0;
+    margin: 1.5em auto 0;
   }
 }
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .logo {
-    float: left;
     margin-bottom: 0;
   }
 }
@@ -904,20 +920,32 @@ header.primary {
 ======================================================================================================== */
 /* ----- a. Main Menu ----- */
 .mainMenu {
-  font-size: 13px;
   position: relative;
   z-index: 101;
 }
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
+  .mainMenu {
+    font-size: 15px;
+    margin: 1em 0;
+    padding: 0 4%;
+  }
+}
+@media only screen and (min-width: 1025px) {
   .mainMenu {
     margin: 1em 0;
   }
 }
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .mainMenu {
-    float: right;
     height: 24px;
-    margin: 80px 0 30px;
+    border-bottom: #b3b3b3 1px solid;
+    padding-bottom: 1em;
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .mainMenu {
+    margin: 1em 2em;
   }
 }
 .mainMenu ul {
@@ -926,24 +954,25 @@ header.primary {
   padding: 0;
   position: relative;
 }
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
+  .mainMenu ul {
+    text-align: left;
+    display: inline;
+  }
+}
+@media only screen and (min-width: 768px) {
   .mainMenu ul {
     text-align: center;
   }
 }
-@media screen and (min-width: 768px) {
-  .mainMenu ul {
-    text-align: right;
-  }
-}
 .mainMenu ul ul {
-  border: 1px solid #cccccc;
-  background: white;
+  border: 1px solid #b3b3b3;
+  background: #e5e5e5;
   display: none;
   font-size: 12px;
   left: -10px;
   position: absolute;
-  top: 32px;
+  top: 42px;
   width: 180px;
 }
 .mainMenu li {
@@ -951,17 +980,17 @@ header.primary {
   padding: 0;
   position: relative;
 }
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .mainMenu li {
-    margin: 0 10px;
+    margin: 0 5px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 819px) {
+@media only screen and (min-width: 768px) {
   .mainMenu li {
     margin: 0 0 0 35px;
   }
 }
-@media screen and (min-width: 820px) {
+@media only screen and (min-width: 768px) {
   .mainMenu li {
     margin: 0 0 0 50px;
   }
@@ -969,7 +998,7 @@ header.primary {
 .mainMenu li:first-child {
   margin-left: 0;
 }
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .mainMenu li:hover ul {
     display: block;
   }
@@ -993,77 +1022,91 @@ header.primary {
   width: 170px;
 }
 .mainMenu li li a:hover {
-  color: black;
+  color: #cccccc;
 }
 .mainMenu a {
-  color: #333333;
+  color: #111111;
   display: inline-block;
   margin: 0;
   padding: 0;
   position: relative;
   text-decoration: none;
 }
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .mainMenu a {
     height: 44px;
     line-height: 44px;
-    padding: 0 0.5em;
+    padding: 0 0.5em 0 0;
   }
 }
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .mainMenu a {
-    height: 32px;
-    line-height: 32px;
+    height: 42px;
+    line-height: 42px;
   }
 }
 .mainMenu a:hover {
-  color: black;
+  color: #111111;
   text-decoration: none;
 }
 .mainMenu .v65-pageAParent {
-  color: black;
+  color: #111111;
 }
-@media screen and (max-width: 919px) {
+@media only screen and (max-width: 1024px) {
   .mainMenu .v65-home {
     display: none;
   }
 }
 .mainMenu .v65-selected {
-  color: black;
+  color: #111111;
   font-weight: bold;
 }
 .mainMenu .footerMenuLink {
-  bottom: 0;
   font-size: 1.5em;
-  position: absolute;
-  right: 0;
+  position: relative;
 }
-@media screen and (max-width: 450px) {
+@media only screen and (max-width: 767px) {
   .mainMenu .footerMenuLink {
     display: block;
+    float: left;
   }
 }
-@media screen and (min-width: 451px) {
+@media only screen and (min-width: 768px) {
   .mainMenu .footerMenuLink {
     display: none;
   }
 }
 
-/* ----- b. Sub Menu ----- */
+/* --- b. User Tools --- */
+@media only screen and (min-width: 581px) and (max-width: 1024px) {
+  #user-tools {
+    margin: 0 3em;
+  }
+}
+#user-tools a {
+  color: #111111;
+}
+@media only screen and (max-width: 767px) {
+  #user-tools .v65-login, #user-tools .v65-logout, #user-tools .v65-yourAccount, #user-tools .v65-editProfile {
+    border-right: #b3b3b3 1px solid;
+  }
+}
+
+/* ----- c. Sub Menu ----- */
 .subMenu {
   margin-bottom: 0;
   margin-top: 6%;
 }
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .subMenu {
-    border-right: 1px solid #cccccc;
+    border-right: 1px solid #b3b3b3;
     float: left;
     margin-right: 4%;
     padding-right: 2%;
     width: 17.5%;
   }
 }
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .subMenu h3 {
     display: none;
   }
@@ -1076,9 +1119,9 @@ header.primary {
 .subMenu li {
   line-height: 3;
 }
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .subMenu li {
-    border-top: 1px solid #cccccc;
+    border-top: 1px solid #b3b3b3;
     line-height: 44px;
     text-align: center;
   }
@@ -1092,10 +1135,10 @@ header.primary {
   width: 100%;
 }
 .subMenu .v65-pageAParent {
-  color: black;
+  color: #575757;
 }
 .subMenu .v65-leftSelected {
-  color: black;
+  color: #111111;
   font-weight: bold;
 }
 
@@ -1103,60 +1146,96 @@ header.primary {
      4. Content
 ======================================================================================================== */
 #v65-modalContentHeader {
-  background: #333333;
+  background: #575757;
 }
 
 .content {
-  background: #fff;
-  box-shadow: 0 0 20px #999999;
+  background: none;
+  box-shadow: none;
 }
 
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .pageContent {
     padding: 1em;
   }
 }
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .pageContent {
-    padding: 3em;
+    padding: 2em;
   }
 }
 
 /* ----- a. Homepage Styles ----- */
 .homepageContent {
-  background: #fff;
-  box-shadow: 0 0 2em #999999;
+  background: none;
+  box-shadow: none;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .homepageContent {
+    margin: 0 2em;
+  }
 }
 
 .homepageText {
   margin-bottom: 2em;
 }
-@media screen and (max-width: 700px) {
+@media only screen and (min-width: 768px) {
+  .homepageText {
+    float: left;
+    width: 30%;
+    margin: 5em 1.5%;
+  }
+}
+@media only screen and (max-width: 767px) {
   .homepageText {
     padding: 0 4%;
   }
 }
-@media screen and (min-width: 701px) {
-  .homepageText {
+
+.homepageText h1 {
+  padding-bottom: 0.5em;
+  border-bottom: #b3b3b3 1px solid;
+  margin: 0.25em  0 0.5em;
+  line-height: 1.2;
+}
+
+.productGroupWrapper {
+  padding: 0 4%;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .homepageFeatureImage {
     float: left;
-    padding: 0 4% 4%;
-    width: 52%;
+    width: 30%;
+    margin: 2em 1.5%;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .homepageFeatureImage {
+    float: left;
+    margin: 2em 0;
+    width: 30%;
+    text-align: center;
   }
 }
 
 .homepageProductGroup {
   margin: 0 0 2em;
 }
-@media screen and (max-width: 700px) {
+@media only screen and (max-width: 767px) {
   .homepageProductGroup {
-    padding: 0 4%;
+    width: 70%;
+    float: left;
+    margin: 2em 0;
   }
 }
-@media screen and (min-width: 701px) {
+@media only screen and (min-width: 768px) {
   .homepageProductGroup {
     float: left;
-    padding: 0 4% 4% 0;
-    width: 36%;
+    width: 30%;
+    margin: 5em 1.5%;
   }
 }
 .homepageProductGroup .v65-productGroup-products {
@@ -1164,11 +1243,7 @@ header.primary {
   width: 100%;
 }
 .homepageProductGroup .v65-productGroup-title {
-  color: #333333;
-  font-family: Georgia, serif;
-  font-size: 26px;
-  line-height: 1.2;
-  margin: 0.25em  0 0.5em;
+  display: none;
 }
 .homepageProductGroup .v65-productGroup-teaser {
   float: none;
@@ -1183,6 +1258,15 @@ header.primary {
   float: left;
   width: auto;
 }
+.homepageProductGroup .v65-product-title {
+  color: #111111;
+  font-family: "Duru Sans", sans-serif;
+  font-size: 1.8em;
+  line-height: 1.2;
+  margin: 0.25em  0 0.5em;
+  padding-bottom: 0.5em;
+  border-bottom: #b3b3b3 1px solid;
+}
 
 #slider {
   height: 0;
@@ -1196,10 +1280,10 @@ header.primary {
 
 /* ----- b. Page Styles ----- */
 .backToTop {
-  background: #333333;
+  background: #111111;
   bottom: 1em;
   color: white;
-  border: 1px solid #cccccc;
+  border: 1px solid #b3b3b3;
   border-radius: 50%;
   display: none;
   height: 5em;
@@ -1240,7 +1324,7 @@ header.primary {
 }
 
 /* ----- c. Store Styles ----- */
-@media screen and (max-width: 725px) {
+@media only screen and (max-width: 767px) {
   #v65-fieldset-wholesalerInfo, #v65-fieldset-billingInfo,
   #v65-fieldset-shippingOptions, #v65-fieldset-shippingInfo,
   #v65-fieldset-paymentMethod, #v65-fieldset-sourceCode,
@@ -1257,7 +1341,11 @@ header.primary {
   margin-left: 0;
 }
 
-@media screen and (max-width: 750px) {
+.v65-productGroup .v65-product-addToCart-unitDescription {
+  font-size: 1em;
+  bottom: 0;
+}
+@media only screen and (max-width: 767px) {
   .v65-productGroup .v65-clear {
     display: none;
   }
@@ -1279,32 +1367,35 @@ header.primary {
   }
 }
 
+.v65-product-addToCart-quantity input {
+  background: #cccccc;
+  color: #111111;
+}
+
+.v65-product2Up .v65-product-addToCart-priceWrapper {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
 /*   ===================================================================================================
      5. Blog
 ======================================================================================================== */
-@media screen and (min-width: 581px) {
+@media only screen and (min-width: 768px) {
   .blogContent {
-    float: left;
+    float: right;
     width: 75%;
   }
 }
-@media screen and (min-width: 768px) {
-  .blogContent {
-    padding: 4% 4% 0 0;
-    width: 56%;
-  }
-}
 
-@media screen and (min-width: 581px) {
+@media only screen and (min-width: 768px) {
   .blogFilterWrapper {
-    float: right;
-    width: 20%;
+    float: left;
+    width: 25%;
   }
 }
-@media screen and (min-width: 768px) {
+@media only screen and (max-width: 767px) {
   .blogFilterWrapper {
-    padding-top: 4%;
-    width: 40%;
+    width: 100%;
   }
 }
 .blogFilterWrapper ul {
@@ -1316,16 +1407,19 @@ header.primary {
   margin: 0 0 0 10px;
 }
 
-@media screen and (max-width: 580px), (min-width: 768px) {
-  .blogFilter {
+@media only screen and (max-width: 767px) {
+  .blogFilterRight {
     float: left;
-    width: 48%;
+    width: 42%;
+    padding: 4%;
   }
 }
 
-@media screen and (max-width: 580px), (min-width: 768px) {
+@media only screen and (max-width: 767px) {
   .blogFilterLeft {
-    padding-right: 4%;
+    float: left;
+    width: 42%;
+    padding: 4%;
   }
 }
 
@@ -1336,17 +1430,9 @@ button span {
   padding: 0 1em;
 }
 button.defaultBtn, button.modalBtn, button.largeBtn {
-  background-color: #3b73ac;
-  background-image: -webkit-linear-gradient(top, #3b73ac, #2e5b87);
-  background-image: -moz-linear-gradient(top, #3b73ac, #2e5b87);
-  background-image: -ms-linear-gradient(top, #3b73ac, #2e5b87);
-  background-image: -o-linear-gradient(top, #3b73ac, #2e5b87);
-  background-image: linear-gradient(top, #3b73ac, #2e5b87);
-  border: 1px solid #3b73ac;
+  background: #6699cc;
   border-radius: 3px;
-  box-shadow: inset 0 1px 0 0 #407fbf;
   text-decoration: none;
-  text-shadow: 0 -1px 0 #558dc5;
   vertical-align: middle;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -1354,32 +1440,19 @@ button.defaultBtn span, button.modalBtn span, button.largeBtn span {
   background: none;
   height: auto;
   line-height: inherit;
+  color: white;
 }
 button.defaultBtn:hover, button.defaultBtn:active, button.modalBtn:hover, button.modalBtn:active, button.largeBtn:hover, button.largeBtn:active {
-  background-color: #4280be;
-  background-image: -webkit-linear-gradient(top, #4280be, #34689a);
-  background-image: -moz-linear-gradient(top, #4280be, #34689a);
-  background-image: -ms-linear-gradient(top, #4280be, #34689a);
-  background-image: -o-linear-gradient(top, #4280be, #34689a);
-  background-image: linear-gradient(top, #4280be, #34689a);
-  box-shadow: inset 0 1px 0 0 #558dc5;
+  background: #b3cce6;
 }
 button.modalBtn, button.altModalBtn {
   height: 2.5em;
   line-height: inherit;
 }
 button.altBtn, button.altModalBtn, button.altLargeBtn {
-  background-color: #575757;
-  background-image: -webkit-linear-gradient(top, #575757, #333333);
-  background-image: -moz-linear-gradient(top, #575757, #333333);
-  background-image: -ms-linear-gradient(top, #575757, #333333);
-  background-image: -o-linear-gradient(top, #575757, #333333);
-  background-image: linear-gradient(top, #575757, #333333);
-  border: 1px solid #575757;
+  background: #cccccc;
   border-radius: 3px;
-  box-shadow: inset 0 1px 0 0 #575757;
   text-decoration: none;
-  text-shadow: 0 -1px 0 black;
   vertical-align: middle;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -1387,15 +1460,10 @@ button.altBtn span, button.altModalBtn span, button.altLargeBtn span {
   background: none;
   height: auto;
   line-height: inherit;
+  color: #111111;
 }
 button.altBtn:hover, button.altBtn:active, button.altModalBtn:hover, button.altModalBtn:active, button.altLargeBtn:hover, button.altLargeBtn:active {
-  background-color: #646464;
-  background-image: -webkit-linear-gradient(top, #646464, #404040);
-  background-image: -moz-linear-gradient(top, #646464, #404040);
-  background-image: -ms-linear-gradient(top, #646464, #404040);
-  background-image: -o-linear-gradient(top, #646464, #404040);
-  background-image: linear-gradient(top, #646464, #404040);
-  box-shadow: inset 0 1px 0 0 #575757;
+  background: #e5e5e5;
 }
 
 a span {
@@ -1404,17 +1472,9 @@ a span {
   line-height: inherit;
 }
 a.linkBtn, a.modalLinkBtn, a.largeLinkBtn {
-  background-color: #3b73ac;
-  background-image: -webkit-linear-gradient(top, #3b73ac, #2e5b87);
-  background-image: -moz-linear-gradient(top, #3b73ac, #2e5b87);
-  background-image: -ms-linear-gradient(top, #3b73ac, #2e5b87);
-  background-image: -o-linear-gradient(top, #3b73ac, #2e5b87);
-  background-image: linear-gradient(top, #3b73ac, #2e5b87);
-  border: 1px solid #3b73ac;
+  background: #6699cc;
   border-radius: 3px;
-  box-shadow: inset 0 1px 0 0 #407fbf;
   text-decoration: none;
-  text-shadow: 0 -1px 0 #558dc5;
   vertical-align: middle;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -1422,28 +1482,15 @@ a.linkBtn span, a.modalLinkBtn span, a.largeLinkBtn span {
   background: none;
   height: auto;
   line-height: inherit;
+  color: white;
 }
 a.linkBtn:hover, a.linkBtn:active, a.modalLinkBtn:hover, a.modalLinkBtn:active, a.largeLinkBtn:hover, a.largeLinkBtn:active {
-  background-color: #4280be;
-  background-image: -webkit-linear-gradient(top, #4280be, #34689a);
-  background-image: -moz-linear-gradient(top, #4280be, #34689a);
-  background-image: -ms-linear-gradient(top, #4280be, #34689a);
-  background-image: -o-linear-gradient(top, #4280be, #34689a);
-  background-image: linear-gradient(top, #4280be, #34689a);
-  box-shadow: inset 0 1px 0 0 #7ba6d2;
+  background: #b3cce6;
 }
 a.linkAltBtn, a.modalLinkAltBtn, a.modalLinkAltBtn {
-  background-color: #575757;
-  background-image: -webkit-linear-gradient(top, #575757, #333333);
-  background-image: -moz-linear-gradient(top, #575757, #333333);
-  background-image: -ms-linear-gradient(top, #575757, #333333);
-  background-image: -o-linear-gradient(top, #575757, #333333);
-  background-image: linear-gradient(top, #575757, #333333);
-  border: 1px solid #575757;
+  background: #cccccc;
   border-radius: 3px;
-  box-shadow: inset 0 1px 0 0 #575757;
   text-decoration: none;
-  text-shadow: 0 -1px 0 black;
   vertical-align: middle;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -1451,15 +1498,10 @@ a.linkAltBtn span, a.modalLinkAltBtn span, a.modalLinkAltBtn span {
   background: none;
   height: auto;
   line-height: inherit;
+  color: #111111;
 }
 a.linkAltBtn:hover, a.linkAltBtn:active, a.modalLinkAltBtn:hover, a.modalLinkAltBtn:active, a.modalLinkAltBtn:hover, a.modalLinkAltBtn:active {
-  background-color: #646464;
-  background-image: -webkit-linear-gradient(top, #646464, #404040);
-  background-image: -moz-linear-gradient(top, #646464, #404040);
-  background-image: -ms-linear-gradient(top, #646464, #404040);
-  background-image: -o-linear-gradient(top, #646464, #404040);
-  background-image: linear-gradient(top, #646464, #404040);
-  box-shadow: inset 0 1px 0 0 #575757;
+  background: #e5e5e5;
 }
 a.modalLinkBtn, a.modalLinkAltBtn, a.modalLinkAltBtn {
   min-width: auto;
@@ -1469,47 +1511,73 @@ a.modalLinkBtn, a.modalLinkAltBtn, a.modalLinkAltBtn {
      7. Footer
 ======================================================================================================== */
 footer {
-  color: #333333;
-  padding: 1.5em 0;
+  color: #111111;
   text-align: center;
   width: 100%;
+  margin: 0 auto;
 }
 footer ul {
   list-style: none;
-  margin: 0 1em;
   padding: 0;
 }
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   footer ul {
     margin-bottom: 0.5em;
+    margin: 0 1em 0.5em 1em;
   }
 }
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
+  footer ul {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 767px) {
   footer li {
-    border-top: 1px solid #cccccc;
+    border-top: 1px solid #b3b3b3;
     line-height: 44px;
     text-align: center;
   }
 }
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   footer li {
     display: inline;
     padding: 0 5px;
   }
 }
 footer li a {
-  color: #333333;
+  color: #111111;
   display: inline-block;
   font-size: 0.917em;
   position: relative;
 }
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   footer li a {
     width: 100%;
   }
 }
 footer li a:hover {
-  color: black;
+  color: #111111;
+}
+footer .footerContent {
+  padding: 1.5em 0;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  footer .footerContent {
+    margin: 0 3em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  footer .footerContent {
+    border-top: 4px double #b3b3b3;
+  }
+}
+footer .socialicons ul li a i {
+  font-size: 1.8em;
+}
+@media only screen and (min-width: 768px) {
+  footer .contactinfo {
+    display: none;
+  }
 }
 footer .phone a:hover, footer .email a:hover, footer .map a:hover {
   text-decoration: none;
@@ -1521,5 +1589,5 @@ footer .legal li {
   display: block;
 }
 footer a {
-  color: #333333;
+  color: #111111;
 }

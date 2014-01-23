@@ -1,33 +1,72 @@
 .homepageContent{
-	background: #fff;
-	box-shadow: 0 0 2em $boxShadowColor;
+	background: none;
+	box-shadow: none;
+	@media #{$tabletOnly}{
+		margin:0 2em;
+	}
+	
 }
 
 .homepageText{
 	margin-bottom: 2em;
 
-	@media screen and (max-width: 700px){
+	@media #{$tabletDeskOnly}{
+		float: left;
+		width: 30%;
+		margin: 5em 1.5%;
+	}
+
+	@media #{$noTabletDesk}{
 		padding: 0 4%;
 	}
 
-	@media screen and (min-width: 701px){
+}
+
+.homepageText h1 {
+	padding-bottom:0.5em;
+	border-bottom:$borderColor 1px solid;
+	margin: 0.25em  0 0.5em;
+	line-height:1.2;
+}
+
+.productGroupWrapper {
+	padding:0 4%;
+	margin:0 auto;
+}
+
+.homepageFeatureImage {
+
+	@media #{$tabletDeskOnly}{
 		float: left;
-		padding: 0 4% 4%;
-		width: 52%;
+		width: 30%;
+		margin:2em 1.5%;
+		text-align: center;
 	}
+
+	@media #{$noTabletDesk}{
+
+		float:left;
+		margin:2em 0;
+		width: 30%;
+		text-align: center;	
+
+	}
+
 }
 
 .homepageProductGroup {
 	margin: 0 0 2em;
 
-	@media screen and (max-width: 700px){
-		padding: 0 4%;
+	@media #{$noTabletDesk}{
+		width:70%;
+		float:left;
+		margin:2em 0;
 	}
 
-	@media screen and (min-width: 701px){
+	@media #{$tabletDeskOnly}{
 		float: left;
-		padding: 0 4% 4% 0;
-		width: 36%;
+		width: 30%;
+		margin:5em 1.5%;
 	}
 
 	.v65-productGroup-products{
@@ -36,11 +75,7 @@
 	}
 
 		.v65-productGroup-title{
-			color: $headingFontColor;
-			font-family: $headingFontFamily;
-			font-size: 26px;
-			line-height: 1.2;
-			margin: 0.25em  0 0.5em;
+			display:none;
 		}
 
 		.v65-productGroup-teaser{
@@ -57,6 +92,16 @@
 			.v65-product-photo{
 				float: left;
 				width: auto;
+			}
+
+			.v65-product-title {
+				color: $headingFontColor;
+				font-family: $headingFontFamily;
+				font-size: 1.8em;
+				line-height: 1.2;
+				margin: 0.25em  0 0.5em;
+				padding-bottom:0.5em;
+				border-bottom:$borderColor 1px solid;
 			}
 }
 

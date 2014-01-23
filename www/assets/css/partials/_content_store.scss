@@ -2,7 +2,7 @@
 #v65-fieldset-shippingOptions, #v65-fieldset-shippingInfo, 
 #v65-fieldset-paymentMethod, #v65-fieldset-sourceCode, 
 #v65-fieldset-usernamePassword{
-	@media screen and (max-width: 725px){
+	@media #{$noTabletDesk}{
 		width: 98%;
 	}
 }
@@ -18,8 +18,12 @@
 }
 
 .v65-productGroup{
+	.v65-product-addToCart-unitDescription {
+		font-size:1em;
+		bottom:0;
+	}
 	.v65-clear{
-		@media screen and (max-width: 750px){
+		@media #{$noTabletDesk}{
 			display: none;
 		}
 
@@ -39,4 +43,14 @@
 			}
 		}
 	}
+}
+
+.v65-product-addToCart-quantity input {
+		background:$quanityForm;
+		color:$quanityFormFont;
+	}
+
+.v65-product2Up .v65-product-addToCart-priceWrapper {
+	display:block;
+	margin-bottom: 0.5em;
 }
