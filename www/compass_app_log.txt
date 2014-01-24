@@ -1,0 +1,10 @@
+2014-01-24 09:46:41 overwrite assets/css/screen.min.css 
+2014-01-24 09:46:47 identical assets/css/screen.min.css 
+2014-01-24 09:56:35 identical assets/css/screen.min.css 
+2014-01-24 09:56:52     error assets/css/screen.min.scss (Line 44 of assets/css/partials/_blog.scss: Invalid CSS after "		}": expected "}", was "")
+2014-01-24 09:56:52 overwrite assets/css/screen.min.css 
+2014-01-24 09:56:52     error assets/css/screen.min.scss (Line 44 of assets/css/partials/_blog.scss: Invalid CSS after "		}": expected "}", was "")
+2014-01-24 09:56:52 identical assets/css/screen.min.css 
+2014-01-24 09:57:03 overwrite assets/css/screen.min.css 
+2014-01-24 10:04:22 overwrite assets/css/screen.min.css 
+2014-01-24 10:08:33 overwrite assets/css/screen.min.css 

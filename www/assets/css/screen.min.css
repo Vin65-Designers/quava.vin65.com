@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "utf-8";
 /* CSS Document */
 /* ====================================================================================================
 	Table of Content
@@ -706,6 +706,7 @@ a.nivo-nextNav {
   border: 0;
   margin: 0 2px;
   cursor: pointer;
+  text-indent: -99999px;
 }
 
 .nivo-controlNav a.active {
@@ -731,7 +732,7 @@ html {
 
 body {
   background-color: #e8e8e8;
-  color: #111111;
+  color: #333333;
   font-family: "Duru Sans", sans-serif;
   margin: 0 auto;
 }
@@ -747,7 +748,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #111111;
+  color: #333333;
   font-family: "Duru Sans", sans-serif;
   font-weight: normal;
   margin: 0;
@@ -790,7 +791,7 @@ h6 {
 }
 
 .v65-title {
-  color: #111111;
+  color: #333333;
   font-family: "Duru Sans", sans-serif;
   font-size: 1.5em;
   font-weight: normal;
@@ -800,7 +801,7 @@ h6 {
 }
 
 .v65-subtitle {
-  color: #111111;
+  color: #333333;
   font-size: 1.5em;
   font-family: "Duru Sans", sans-serif;
   font-weight: normal;
@@ -823,7 +824,7 @@ dd, dt, li {
 }
 
 a {
-  color: #336699;
+  color: #990000;
   text-decoration: none;
 }
 a:hover, a:focus, a:active {
@@ -841,13 +842,13 @@ form {
 }
 
 legend {
-  color: #111111;
+  color: #333333;
 }
 
 hr {
-  background-color: #111111;
+  background-color: #333333;
   border: 0;
-  color: #111111;
+  color: #333333;
   height: 1px;
 }
 
@@ -887,20 +888,20 @@ header.primary {
 }
 
 .logo {
-  background-image: url('../images/logo-blue.png?1390497390');
+  background-image: url('../images/logo.png?1390329115');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: contain;
   display: block;
-  height: 50px;
+  height: 48px;
   position: relative;
-  width: 260px;
+  width: 305px;
   margin: 1.5em auto;
   padding-bottom: 1em;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5) {
   .logo {
-    background-image: url('../images/logo-blue@2x.png?1390497405');
+    background-image: url('../images/logo@2x.png?1390236024');
   }
 }
 @media only screen and (max-width: 767px) {
@@ -1025,7 +1026,7 @@ header.primary {
   color: #cccccc;
 }
 .mainMenu a {
-  color: #111111;
+  color: #333333;
   display: inline-block;
   margin: 0;
   padding: 0;
@@ -1259,7 +1260,7 @@ header.primary {
   width: auto;
 }
 .homepageProductGroup .v65-product-title {
-  color: #111111;
+  color: #333333;
   font-family: "Duru Sans", sans-serif;
   font-size: 1.8em;
   line-height: 1.2;
@@ -1280,7 +1281,7 @@ header.primary {
 
 /* ----- b. Page Styles ----- */
 .backToTop {
-  background: #111111;
+  background: #333333;
   bottom: 1em;
   color: white;
   border: 1px solid #b3b3b3;
@@ -1430,7 +1431,7 @@ button span {
   padding: 0 1em;
 }
 button.defaultBtn, button.modalBtn, button.largeBtn {
-  background: #6699cc;
+  background: #9dbf8e;
   border-radius: 3px;
   text-decoration: none;
   vertical-align: middle;
@@ -1443,7 +1444,7 @@ button.defaultBtn span, button.modalBtn span, button.largeBtn span {
   color: white;
 }
 button.defaultBtn:hover, button.defaultBtn:active, button.modalBtn:hover, button.modalBtn:active, button.largeBtn:hover, button.largeBtn:active {
-  background: #b3cce6;
+  background: #bed3b4;
 }
 button.modalBtn, button.altModalBtn {
   height: 2.5em;
@@ -1472,7 +1473,7 @@ a span {
   line-height: inherit;
 }
 a.linkBtn, a.modalLinkBtn, a.largeLinkBtn {
-  background: #6699cc;
+  background: #9dbf8e;
   border-radius: 3px;
   text-decoration: none;
   vertical-align: middle;
@@ -1485,7 +1486,7 @@ a.linkBtn span, a.modalLinkBtn span, a.largeLinkBtn span {
   color: white;
 }
 a.linkBtn:hover, a.linkBtn:active, a.modalLinkBtn:hover, a.modalLinkBtn:active, a.largeLinkBtn:hover, a.largeLinkBtn:active {
-  background: #b3cce6;
+  background: #bed3b4;
 }
 a.linkAltBtn, a.modalLinkAltBtn, a.modalLinkAltBtn {
   background: #cccccc;
@@ -1511,7 +1512,7 @@ a.modalLinkBtn, a.modalLinkAltBtn, a.modalLinkAltBtn {
      7. Footer
 ======================================================================================================== */
 footer {
-  color: #111111;
+  color: #333333;
   text-align: center;
   width: 100%;
   margin: 0 auto;
@@ -1545,7 +1546,7 @@ footer ul {
   }
 }
 footer li a {
-  color: #111111;
+  color: #333333;
   display: inline-block;
   font-size: 0.917em;
   position: relative;
@@ -1589,5 +1590,5 @@ footer .legal li {
   display: block;
 }
 footer a {
-  color: #111111;
+  color: #333333;
 }

@@ -30,16 +30,11 @@
 		initPhotoGallery : function(){
 			if($("#pagePhotoGallery").length){
 				$("#pagePhotoGallery").v65PhotoGallery({
-					/*
-						Uncomment the code below if you want to change how the photo gallery is displayed.
+					
 
-						galleryHeight : 420, // This value is translated to 420px and will change the photogallery height
-						galleryWidth : 630, // This value is translated to 630px and will change the photogallery width
-						pauseTime : 5000, // Adjust how long the image is displayed for. Value is in milliseconds
-						animSpeed : 1000, // Adjust the transition speed between images. Value is in milliseconds
-						controlNav : false, // hide the 1,2,3 navigation
-						directionNav : false // hide the arrow navigation
-					*/
+						galleryHeight : null, // This value is translated to 420px and will change the photogallery height
+						galleryWidth : null, // This value is translated to 630px and will change the photogallery width
+					
 				});
 			}
 		},
