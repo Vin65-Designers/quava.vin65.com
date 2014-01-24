@@ -45,16 +45,6 @@ footer{
 			}
 		}
 	}
-
-.footerContent {
-	padding: 1.5em 0;
-	@media #{$tabletOnly} {
-		margin:0 3em;
-	}
-	@media #{$tabletDeskOnly} {
-		border-top:4px double #b3b3b3;
-	}
-}
 	
 	.socialicons ul li a i {
 		font-size:1.8em;
@@ -82,5 +72,15 @@ footer{
 
 	a{
 		color:$footerFontColor;
+	}
+}
+
+.footerContent {
+	@media #{$tabletOnly} {
+		margin:0 3em;
+	}
+	@media #{$tabletDeskOnly} {
+		border-top:4px double #b3b3b3;
+		padding: 1.5em 0;
 	}
 }

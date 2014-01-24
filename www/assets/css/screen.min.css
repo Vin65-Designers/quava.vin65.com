@@ -795,7 +795,6 @@ h6 {
   font-family: "Duru Sans", sans-serif;
   font-size: 1.5em;
   font-weight: normal;
-  min-height: 2em;
   line-height: 1;
   margin-bottom: 0.5em;
 }
@@ -928,7 +927,8 @@ header.primary {
   .mainMenu {
     font-size: 15px;
     margin: 1em 0;
-    padding: 0 4%;
+    padding: 0 1%;
+    text-align: center;
   }
 }
 @media only screen and (min-width: 1025px) {
@@ -1023,7 +1023,7 @@ header.primary {
   width: 170px;
 }
 .mainMenu li li a:hover {
-  color: #cccccc;
+  color: #990000;
 }
 .mainMenu a {
   color: #333333;
@@ -1047,11 +1047,11 @@ header.primary {
   }
 }
 .mainMenu a:hover {
-  color: #111111;
+  color: #990000;
   text-decoration: none;
 }
 .mainMenu .v65-pageAParent {
-  color: #111111;
+  color: #990000;
 }
 @media only screen and (max-width: 1024px) {
   .mainMenu .v65-home {
@@ -1059,7 +1059,7 @@ header.primary {
   }
 }
 .mainMenu .v65-selected {
-  color: #111111;
+  color: #990000;
   font-weight: bold;
 }
 .mainMenu .footerMenuLink {
@@ -1068,8 +1068,8 @@ header.primary {
 }
 @media only screen and (max-width: 767px) {
   .mainMenu .footerMenuLink {
-    display: block;
-    float: left;
+    display: inline-block;
+    float: none;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -1139,7 +1139,7 @@ header.primary {
   color: #575757;
 }
 .subMenu .v65-leftSelected {
-  color: #111111;
+  color: #990000;
   font-weight: bold;
 }
 
@@ -1156,8 +1156,26 @@ header.primary {
 }
 
 @media only screen and (max-width: 767px) {
-  .pageContent {
+  .contentFix {
     padding: 1em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .contentFix {
+    padding: 2em;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .v65-formRight {
+    margin: 0 0 1em 0;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .pageContent {
+    padding: 0;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -1201,8 +1219,12 @@ header.primary {
 }
 
 .productGroupWrapper {
-  padding: 0 4%;
   margin: 0 auto;
+}
+@media only screen and (max-width: 767px) {
+  .productGroupWrapper {
+    padding: 0 4%;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -1216,8 +1238,8 @@ header.primary {
 @media only screen and (max-width: 767px) {
   .homepageFeatureImage {
     float: left;
-    margin: 2em 0;
-    width: 30%;
+    margin: 2em 4% 2em 0;
+    width: 25%;
     text-align: center;
   }
 }
@@ -1304,6 +1326,11 @@ header.primary {
     width: 75%;
   }
 }
+@media only screen and (max-width: 767px) {
+  .page {
+    padding: 1em;
+  }
+}
 
 @media screen and (min-width: 581px) {
   .col2 {
@@ -1378,20 +1405,30 @@ header.primary {
   margin-bottom: 0.5em;
 }
 
+@media only screen and (max-width: 767px) {
+  #v65-signUpClubSummaryWrapper, #v65-checkoutCartSummaryWrapper {
+    margin: 0 0 2em;
+    width: 90%;
+    padding: 5%;
+    position: relative;
+    clear: both;
+  }
+}
+
 /*   ===================================================================================================
      5. Blog
 ======================================================================================================== */
 @media only screen and (min-width: 768px) {
   .blogContent {
-    float: right;
+    float: left;
     width: 75%;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .blogFilterWrapper {
-    float: left;
-    width: 25%;
+    float: right;
+    width: 20%;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -1444,7 +1481,7 @@ button.defaultBtn span, button.modalBtn span, button.largeBtn span {
   color: white;
 }
 button.defaultBtn:hover, button.defaultBtn:active, button.modalBtn:hover, button.modalBtn:active, button.largeBtn:hover, button.largeBtn:active {
-  background: #bed3b4;
+  background: #81ad6d;
 }
 button.modalBtn, button.altModalBtn {
   height: 2.5em;
@@ -1464,7 +1501,7 @@ button.altBtn span, button.altModalBtn span, button.altLargeBtn span {
   color: #111111;
 }
 button.altBtn:hover, button.altBtn:active, button.altModalBtn:hover, button.altModalBtn:active, button.altLargeBtn:hover, button.altLargeBtn:active {
-  background: #e5e5e5;
+  background: #990000;
 }
 
 a span {
@@ -1486,7 +1523,7 @@ a.linkBtn span, a.modalLinkBtn span, a.largeLinkBtn span {
   color: white;
 }
 a.linkBtn:hover, a.linkBtn:active, a.modalLinkBtn:hover, a.modalLinkBtn:active, a.largeLinkBtn:hover, a.largeLinkBtn:active {
-  background: #bed3b4;
+  background: #81ad6d;
 }
 a.linkAltBtn, a.modalLinkAltBtn, a.modalLinkAltBtn {
   background: #cccccc;
@@ -1502,7 +1539,7 @@ a.linkAltBtn span, a.modalLinkAltBtn span, a.modalLinkAltBtn span {
   color: #111111;
 }
 a.linkAltBtn:hover, a.linkAltBtn:active, a.modalLinkAltBtn:hover, a.modalLinkAltBtn:active, a.modalLinkAltBtn:hover, a.modalLinkAltBtn:active {
-  background: #e5e5e5;
+  background: #990000;
 }
 a.modalLinkBtn, a.modalLinkAltBtn, a.modalLinkAltBtn {
   min-width: auto;
@@ -1559,19 +1596,6 @@ footer li a {
 footer li a:hover {
   color: #111111;
 }
-footer .footerContent {
-  padding: 1.5em 0;
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  footer .footerContent {
-    margin: 0 3em;
-  }
-}
-@media only screen and (min-width: 768px) {
-  footer .footerContent {
-    border-top: 4px double #b3b3b3;
-  }
-}
 footer .socialicons ul li a i {
   font-size: 1.8em;
 }
@@ -1591,4 +1615,16 @@ footer .legal li {
 }
 footer a {
   color: #333333;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .footerContent {
+    margin: 0 3em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .footerContent {
+    border-top: 4px double #b3b3b3;
+    padding: 1.5em 0;
+  }
 }

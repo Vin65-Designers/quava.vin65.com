@@ -7,9 +7,26 @@
 	box-shadow: none;
 }
 
-	.pageContent{
+	.contentFix {
 		@media #{$noTabletDesk}{
 			padding: 1em;
+		}
+		
+		@media #{$tabletDeskOnly}{
+			padding: 2em;
+		}
+	}
+
+	.v65-formRight {
+		@media #{$noTabletDesk}{
+			margin: 0 0 1em 0;
+			width: 100%;
+		}
+	}
+
+	.pageContent{
+		@media #{$noTabletDesk}{
+			padding: 0;
 		}
 		
 		@media #{$tabletDeskOnly}{

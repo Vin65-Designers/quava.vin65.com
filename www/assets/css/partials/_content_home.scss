@@ -30,7 +30,9 @@
 }
 
 .productGroupWrapper {
-	padding:0 4%;
+	@media #{$noTabletDesk}{
+		padding:0 4%;
+	}
 	margin:0 auto;
 }
 
@@ -44,12 +46,11 @@
 	}
 
 	@media #{$noTabletDesk}{
-
 		float:left;
-		margin:2em 0;
-		width: 30%;
+		margin:2em 4% 2em 0;
+		width: 25%;
 		text-align: center;	
-
+		
 	}
 
 }

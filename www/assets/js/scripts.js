@@ -15,11 +15,6 @@
 			});
 		}
 	},
-	home : {
-		init : function() {
-			$('.v65-productGroup-product img').attr('src', $(this).attr('src').replace('thumbnails', 'large'));
-		}
-	},
 	page : {
 		init : function(){
 			v65.page.initPhotoGallery();

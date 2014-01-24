@@ -29,12 +29,12 @@ $userToolsLinkColor: $black; // Link Color for user tools
 
 // Navigation Colors
 $navLinkColor: $dark-grey; //Font Color for main navigation
-$navLinkHover: $black; //Font Hover for main navigation
+$navLinkHover: $red; //Font Hover for main navigation
 
-$navSelected: $black;
+$navSelected: $red;
 
 $subNavLinkColor: $grey; //Font Color for sub navigation
-$subNavLinkHover: $light-grey; //Font Color for sub navigation hover
+$subNavLinkHover: $red; //Font Color for sub navigation hover
 $subNavBackgroundColor: $grey-lightest; //Background Color for sub navigation
 
 // Footer Colors
@@ -50,11 +50,11 @@ $borderColor: $bordergrey; // Main Border Color
 
 // Button Colors
 $mainButtonColor: $green; // Main Button Color
-$mainButtonHover: $light-green; // Main Button Hover
+$mainButtonHover: darken($green, 10%); // Main Button Hover
 $mainButtonText: $white; // Main Button Font Color
 
 $secondButtonColor: $light-grey; // Secondary Button Color
-$secondButtonHover: $grey-lightest; // Secondary Button Hover
+$secondButtonHover: $red; // Secondary Button Hover
 $secondButtonText: $black; // Secondary Button Font Color
 
 // Form Colors

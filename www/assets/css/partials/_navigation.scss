@@ -6,7 +6,8 @@
 	@media #{$noTabletDesk}{
 		font-size: 15px;
 		margin:1em 0;
-		padding:0 4%;
+		padding:0 1%;
+		text-align: center;
 	}
 	
 	@media #{$deskOnly} {
@@ -155,8 +156,8 @@
 		position: relative;
 
 		@media #{$noTabletDesk}{
-			display: block;
-			float:left;
+			display: inline-block;
+			float:none;
 		}
 
 		@media #{$tabletDeskOnly

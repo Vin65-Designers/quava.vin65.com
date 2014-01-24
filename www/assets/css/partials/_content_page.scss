@@ -23,6 +23,9 @@
 		float: right;
 		width: 75%;
 	}
+	@media #{$noTabletDesk}{
+			padding: 1em;
+		}
 }
 
 .col2{

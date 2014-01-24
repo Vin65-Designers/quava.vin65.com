@@ -1,6 +1,6 @@
 .blogContent{
 	@media #{$tabletDeskOnly}{
-		float: right;
+		float: left;
 		width: 75%;
 	}
 }
@@ -8,8 +8,8 @@
 .blogFilterWrapper {
 
 	@media #{$tabletDeskOnly}{
-		float: left;
-		width: 25%;
+		float: right;
+		width:20%;
 	}
 
 	@media #{$noTabletDesk}{

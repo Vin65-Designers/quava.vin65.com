@@ -54,3 +54,13 @@
 	display:block;
 	margin-bottom: 0.5em;
 }
+
+#v65-signUpClubSummaryWrapper, #v65-checkoutCartSummaryWrapper {
+	@media #{$noTabletDesk}{
+		margin: 0 0 2em;
+		width: 90%;
+		padding: 5%;
+		position: relative;
+		clear: both;
+	}
+}
